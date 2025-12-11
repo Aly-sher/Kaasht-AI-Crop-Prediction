@@ -50,7 +50,6 @@ The system follows a 3-tier architecture:
 2.  **Network Layer:** Data is transmitted to the cloud server via Wi-Fi.
 3.  **Application Layer:** The ML model processes data to generate insights displayed on the user dashboard.
 
-*(Optional: Add a diagram of your system architecture here)*
 
 ---
 
