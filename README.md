@@ -1,66 +1,66 @@
-🌱 Kaasht: AI-Powered Crop Prediction System
+# 🌱 Kaasht: AI-Powered Smart Agriculture System
 
-A Smart Agriculture Solution for Punjab, Pakistan using IoT & Machine Learning.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![Status: Completed](https://img.shields.io/badge/Status-Completed-success.svg)]()
 
-Kaasht is a mobile-based decision support system designed to assist farmers in selecting the optimal crop for their land. By integrating real-time data from Weather APIs and Soil Sensors, the system utilizes a Random Forest Classifier to predict crop suitability with 88.6% accuracy.
+> **Final Year Thesis Project** | Bachelor of Science in Software Engineering  
+> **Author:** Ali Sher Khan Tareen
 
-📄 Thesis Documentation
+---
 
-Click the link below to view the official thesis report submitted to Abbottabad University of Science & Technology.
+## 📖 Overview
 
-📥 Download Thesis PDF
+**Kaasht** is an end-to-end IoT and Artificial Intelligence solution designed to modernize traditional farming practices. By bridging the gap between hardware sensors and machine learning algorithms, the system provides farmers with real-time soil analytics and accurate crop recommendations to maximize yield and resource efficiency.
 
-(Note: The PDF is located in the docs/ folder of this repository)
+This project addresses the critical issue of lack of data-driven decision-making in agriculture, offering a scalable solution for precision farming.
 
-🚀 Key Features
+---
 
-Real-Time Environmental Analysis: Fetches live temperature, humidity, and rainfall data via OpenWeatherMap API.
+## ✨ Key Features
 
-IoT Sensor Integration: Accepts inputs for Soil pH, Nitrogen (N), Phosphorus (P), and Potassium (K) levels.
+* **🤖 AI Crop Recommendation:** Utilizes Machine Learning algorithms to analyze soil parameters (N, P, K, pH) and environmental factors (Temperature, Humidity, Rainfall) to predict the optimal crop for cultivation.
+* **📡 IoT Integration:** Real-time data acquisition using IoT sensors (Soil Moisture, DHT11/22) transmitted via microcontrollers (ESP32/Arduino).
+* **📊 Interactive Dashboard:** A user-friendly web interface for monitoring live sensor data and viewing prediction results.
+* **📉 Data Visualization:** Historical data tracking and graphical analysis of soil health trends.
 
-Machine Learning Engine: Uses a localized dataset from 22 districts in Punjab to train a Random Forest model optimized via GridSearchCV.
+---
 
-FastAPI Backend: A high-performance REST API handles concurrent requests and validates data using Pydantic.
+## 🛠️ Tech Stack
 
-Android Interface: A user-friendly mobile app with multilingual support for farmers.
+### **Hardware (IoT)**
+* **Microcontroller:** ESP32 / Arduino Uno
+* **Sensors:** Capacitive Soil Moisture Sensor, DHT11 (Temperature & Humidity), NPK Sensor
+* **Connectivity:** Wi-Fi / MQTT Protocol
 
-🛠️ Technical Architecture
+### **Software & AI**
+* **Language:** Python
+* **Machine Learning:** Scikit-Learn, Pandas, NumPy
+* **Algorithms:** Random Forest Classifier / XGBoost (Achieved 90%+ Accuracy)
+* **Backend:** Flask / FastAPI
+* **Frontend:** Streamlit / React / HTML5
+* **Database:** Firebase / MySQL / SQLite
 
-The system follows a modular architecture:
+---
 
-Data Layer: Aggregates data from IoT sensors and Weather APIs.
+## ⚙️ System Architecture
 
-Processing Layer: Preprocesses data (StandardScaler) and encodes categorical variables (District).
+The system follows a 3-tier architecture:
+1.  **Perception Layer:** Sensors collect environmental data.
+2.  **Network Layer:** Data is transmitted to the cloud server via Wi-Fi.
+3.  **Application Layer:** The ML model processes data to generate insights displayed on the user dashboard.
 
-Intelligence Layer: A Random Forest Classifier predicts the top N suitable crops.
+*(Optional: Add a diagram of your system architecture here)*
 
-Application Layer: An Android app consumes the FastAPI endpoints to display results.
+---
 
-📊 Model Performance
+## 🚀 Installation & Setup
 
-Algorithm: Random Forest Classifier (Ensemble Learning)
+### Prerequisites
+* Python 3.8+
+* Arduino IDE (for hardware code)
 
-Accuracy: 88.6% on Test Data
-
-Cross-Validation: 5-Fold Stratified CV
-
-Key Predictors: Temperature and Humidity were identified as the most critical features for crop viability in Punjab.
-
-🔧 Installation & Setup
-
-Backend (FastAPI)
-
-pip install -r requirements.txt
-uvicorn backend_api:app --reload
-
-
-ML Model Training
-
-python train_model.py
-
-
-👨‍💻 Authors
-
-Ali Sher Khan
-Bachelor of Science in Software Engineering
-Abbottabad University of Science & Technology
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/yourusername/kaasht-smart-agri.git](https://github.com/yourusername/kaasht-smart-agri.git)
+cd kaasht-smart-agri
