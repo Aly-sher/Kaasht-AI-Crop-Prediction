@@ -91,15 +91,3 @@ Kaasht-AI-Crop-Prediction/
 │   └── Dataset kaasht.csv # Training Dataset
 
 
-👥 Team
-Name
-Role
-Ali Sher Khan Lead Developer & ML Engineer
-Mohsin Waseem Team Member
-Supervisor: Mr. Mir Jamal-ud-din
-
-📄 License
-This project is licensed under the MIT License.
-
-<div align="center"> <sub>Made with ❤️ in Pakistan</sub> </div> EOF
-Abbottabad University of Science & Technology
