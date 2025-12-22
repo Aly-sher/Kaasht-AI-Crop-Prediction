@@ -1,65 +1,92 @@
-# 🌱 Kaasht: AI-Powered Smart Agriculture System
+# 1. Overwrite the README.md file with professional content
+cat > README.md << 'EOF'
+# 🌾 Kaasht - AI-Powered Crop Prediction System
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![Status: Completed](https://img.shields.io/badge/Status-Completed-success.svg)]()
+<div align="center">
 
-> **Final Year Thesis Project** | Bachelor of Science in Software Engineering  
-> **Author:** Ali Sher Khan Tareen
+![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat&logo=android)
+![Backend](https://img.shields.io/badge/Backend-FastAPI-009688?style=flat&logo=fastapi)
+![ML](https://img.shields.io/badge/AI-Random%20Forest-orange?style=flat)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+
+*Empowering farmers in Punjab, Pakistan with intelligent crop recommendations using AI and real-time environmental data.*
+
+[Features](#-features) • [Tech Stack](#-tech-stack) • [Installation](#-getting-started) • [Team](#-team)
+
+</div>
 
 ---
 
-## 📖 Overview
+## 📱 Overview
 
-**Kaasht** is an end-to-end IoT and Artificial Intelligence solution designed to modernize traditional farming practices. By bridging the gap between hardware sensors and machine learning algorithms, the system provides farmers with real-time soil analytics and accurate crop recommendations to maximize yield and resource efficiency.
+**Kaasht** is a smart agriculture mobile application designed to assist farmers. By analyzing soil nutrients (N, P, K, pH) and real-time weather conditions, it uses Machine Learning to recommend the most optimal crops to maximize yield.
 
-This project addresses the critical issue of lack of data-driven decision-making in agriculture, offering a scalable solution for precision farming.
+### 🎯 Problem Statement
+Traditional farming relies on guesswork. Kaasht solves this by providing:
+- ✅ **Data-Driven Decisions:** Based on 2,200+ agricultural records.
+- ✅ **Real-Time Analysis:** Integration with live weather APIs.
+- ✅ **Precision:** Soil nutrient analysis for accurate predictions.
 
 ---
 
-## ✨ Key Features
+## 🚀 Features
 
-* **🤖 AI Crop Recommendation:** Utilizes Machine Learning algorithms to analyze soil parameters (N, P, K, pH) and environmental factors (Temperature, Humidity, Rainfall) to predict the optimal crop for cultivation.
-* **📡 IoT Integration:** Real-time data acquisition using IoT sensors (Soil Moisture, DHT11/22) transmitted via microcontrollers (ESP32/Arduino).
-* **📊 Interactive Dashboard:** A user-friendly web interface for monitoring live sensor data and viewing prediction results.
-* **📉 Data Visualization:** Historical data tracking and graphical analysis of soil health trends.
+### 🧠 **AI-Powered Prediction**
+- Uses a **Random Forest Classifier** (99% Accuracy).
+- Analyzes **8 parameters**: Nitrogen, Phosphorus, Potassium, Temperature, Humidity, pH, Rainfall, and District.
+- Provides top 5 crop recommendations with confidence scores.
+
+### 🌦️ **Weather Integration**
+- Fetches live data via **OpenWeatherMap API**.
+- Displays 7-day forecasts and real-time alerts.
+
+### 📊 **History & Analytics**
+- Saves predictions locally using **Room Database**.
+- Visualizes crop trends using dynamic **Bar Charts**.
+- **Cloud Sync** with Firebase Firestore.
+
+### 📤 **Reporting**
+- Export prediction reports as **PDF** (Professional Format).
+- Export data as **CSV** for external analysis.
+
+### 📡 **IoT Sensor Support**
+- Bluetooth integration for **ESP32/Arduino Soil Sensors**.
+- Live data streaming directly into the app.
 
 ---
 
 ## 🛠️ Tech Stack
 
-### **Hardware (IoT)**
-* **Microcontroller:** ESP32 / Arduino Uno
-* **Sensors:** Capacitive Soil Moisture Sensor, DHT11 (Temperature & Humidity), NPK Sensor
-* **Connectivity:** Wi-Fi / MQTT Protocol
+### **Android (Client)**
+| Component | Technology |
+|-----------|-----------|
+| **Language** | Kotlin |
+| **Architecture** | MVVM (Model-View-ViewModel) |
+| **DI** | Dagger Hilt |
+| **Networking** | Retrofit + OkHttp |
+| **Local DB** | Room Database |
+| **UI** | Material Design 3, ViewBinding |
+| **Charts** | MPAndroidChart |
 
-### **Software & AI**
-* **Language:** Python
-* **Machine Learning:** Scikit-Learn, Pandas, NumPy
-* **Algorithms:** Random Forest Classifier / XGBoost (Achieved 90%+ Accuracy)
-* **Backend:** Flask / FastAPI
-* **Frontend:** Streamlit / React / HTML5
-* **Database:** Firebase / MySQL / SQLite
-
----
-
-## ⚙️ System Architecture
-
-The system follows a 3-tier architecture:
-1.  **Perception Layer:** Sensors collect environmental data.
-2.  **Network Layer:** Data is transmitted to the cloud server via Wi-Fi.
-3.  **Application Layer:** The ML model processes data to generate insights displayed on the user dashboard.
-
+### **Backend (Server)**
+| Component | Technology |
+|-----------|-----------|
+| **Framework** | FastAPI (Python) |
+| **ML Model** | Random Forest (Scikit-Learn) |
+| **Server** | Uvicorn |
+| **Data** | Pandas, NumPy |
 
 ---
 
-## 🚀 Installation & Setup
+## 📂 Project Structure
 
-### Prerequisites
-* Python 3.8+
-* Arduino IDE (for hardware code)
-
-### 1. Clone the Repository
-```bash
-git clone [https://github.com/yourusername/kaasht-smart-agri.git](https://github.com/yourusername/kaasht-smart-agri.git)
-cd kaasht-smart-agri
+```text
+Kaasht-AI-Crop-Prediction/
+├── android/               # Android Application Source Code
+│   ├── app/src/main/java  # Kotlin Code (MVVM Architecture)
+│   └── app/src/main/res   # UI Layouts & Resources
+│
+├── backend/               # Python ML Server
+│   ├── train_model.py     # Script to train the ML model
+│   ├── server.py          # FastAPI server for predictions
+│   └── Dataset kaasht.csv # Training Dataset
