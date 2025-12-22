@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/weatherFragment"
+        android:icon="@drawable/ic_cloudy"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/predictionFragment"
+        android:icon="@drawable/ic_prediction"
+        android:title="Predict" />
+    <item
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/ic_reset"
+        android:title="History" />
+</menu>
