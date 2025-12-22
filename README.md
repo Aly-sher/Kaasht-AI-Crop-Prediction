@@ -1,5 +1,4 @@
-# 1. Overwrite the README.md file with professional content
-cat > README.md << 'EOF'
+
 # 🌾 Kaasht - AI-Powered Crop Prediction System
 
 <div align="center">
