@@ -88,3 +88,26 @@ Kaasht-AI-Crop-Prediction/
 │   ├── train_model.py     # Script to train the ML model
 │   ├── server.py          # FastAPI server for predictions
 │   └── Dataset kaasht.csv # Training Dataset
+```
+---
+
+## 👥 Team
+
+Ali Sher Khan Tareen   - Lead Developer & ML Engineer
+
+
+
+Mohsin Waseem          - Team Member
+
+Supervisor: Mr. Mir Jamal-ud-din
+
+Abbottabad University of Science & Technology
+
+---
+
+## 📄 License
+This project is licensed under the MIT License.
+
+<div align="center"> <sub>Made with ❤️ in Pakistan</sub> </div>
+
+
