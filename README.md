@@ -28,7 +28,7 @@ Traditional farming relies on guesswork. Kaasht solves this by providing:
 ## 🚀 Features
 
 ### 🧠 **AI-Powered Prediction**
-- Uses a **Random Forest Classifier** (99% Accuracy).
+- Uses a **Random Forest Classifier**.
 - Analyzes **8 parameters**: Nitrogen, Phosphorus, Potassium, Temperature, Humidity, pH, Rainfall, and District.
 - Provides top 5 crop recommendations with confidence scores.
 
