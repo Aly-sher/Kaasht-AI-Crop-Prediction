@@ -1,4 +1,3 @@
-
 # 🌾 Kaasht - AI-Powered Crop Prediction System
 
 <div align="center">
@@ -9,8 +8,6 @@
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 *Empowering farmers in Punjab, Pakistan with intelligent crop recommendations using AI and real-time environmental data.*
-
-[Features](#-features) • [Tech Stack](#-tech-stack) • [Installation](#-getting-started) • [Team](#-team)
 
 </div>
 
@@ -57,6 +54,7 @@ Traditional farming relies on guesswork. Kaasht solves this by providing:
 ## 🛠️ Tech Stack
 
 ### **Android (Client)**
+
 | Component | Technology |
 |-----------|-----------|
 | **Language** | Kotlin |
@@ -68,6 +66,7 @@ Traditional farming relies on guesswork. Kaasht solves this by providing:
 | **Charts** | MPAndroidChart |
 
 ### **Backend (Server)**
+
 | Component | Technology |
 |-----------|-----------|
 | **Framework** | FastAPI (Python) |
@@ -89,5 +88,3 @@ Kaasht-AI-Crop-Prediction/
 │   ├── train_model.py     # Script to train the ML model
 │   ├── server.py          # FastAPI server for predictions
 │   └── Dataset kaasht.csv # Training Dataset
-
-
