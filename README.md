@@ -1,4 +1,4 @@
-# 🌾 Kaasht - AI-Powered Crop Prediction System
+#          🌾 Kaasht - AI-Powered Crop Prediction System
 
 <div align="center">
 
