@@ -1,4 +1,4 @@
-#          🌾 Kaasht - AI-Powered Crop Prediction System
+##          🌾 Kaasht - AI-Powered Crop Prediction System
 
 <div align="center">
 
@@ -62,7 +62,7 @@ Manual input as a fallback.
 
 The training data is in backend/Dataset kaasht.csv: 2,202 labeled samples with the eight input features above and a crop label.
 
-The dataset was downloaded from an online source and prepared for this project (cleaning, encoding and scaling). The original source was not recorded, so it cannot be cited here. The project team did not collect it. The MIT license below covers the code; the dataset comes from a third party and may have its own terms.
+The dataset was downloaded from an online source and prepared for this project (cleaning, encoding and scaling). The original source was not recorded, so it is not cited here. The project team did not collect it. The MIT license below covers the code; the dataset comes from a third party and may have its own terms.
 
 ## 🔬 Model and Evaluation
 
@@ -79,7 +79,9 @@ Result. About 88.6% accuracy on the held-out 20% test set, as reported in the pr
 The server exposes a /predict endpoint. It accepts a POST request with N, P, K, temperature, humidity, pH, rainfall and district, validates the input, applies the saved encoder and scaler, and returns the top crops by predicted probability. Example of the response format:
 
 json
+```
 {"recommendations": [{"crop": "rice", "success_rate": 0.8542}, {"crop": "maize", "success_rate": 0.1234}]}
+```
 
 ## ⚠️ Limitations
 The dataset is small (2,202 samples) and was not collected by the project team, so it may not reflect the soils, weather and districts of real farms.
@@ -97,6 +99,7 @@ Learning across farms. Can models learn from data held on many farms or district
 
 
 # 🛠️ Tech Stack
+```
 Android (Client)
 Component	Technology
 Language	Kotlin
@@ -112,7 +115,8 @@ Framework	FastAPI (Python)
 ML Model	Random Forest (Scikit-Learn)
 Server	Uvicorn
 Data	Pandas, NumPy
----
+```
+
 # 📂 Project Structure
 ```text
 Kaasht-AI-Crop-Prediction/
